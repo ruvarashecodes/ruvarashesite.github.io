@@ -3,40 +3,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me — Rufaro's Space</title>
+  <title>About — Rufaro Chipoyera</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav>
-    <span class="nav-logo">ruvachipoyera 🎀</span>
+    <span class="nav-logo">Rufaro Chipoyera</span>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About</a></li>
       <li><a href="posts.html">Posts</a></li>
-      <li><a href="extras.html">Extras</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
   </nav>
 
   <div class="container">
+
     <section>
       <a href="index.html" class="back-link">Home</a>
+      <span class="section-label">About Me</span>
+      <h1>The person<br><em>behind the site.</em></h1>
 
-      <span class="section-label">Hey there 👋</span>
-      <h1>About Me</h1>
+      <div class="about-grid fade-in">
+        <div class="about-photo-wrap">
+          <img src="WhatsApp_Image_2026-03-26_at_14_15_34__1_.jpeg" alt="Rufaro Chipoyera" class="about-photo" />
+          <div class="about-photo-accent"></div>
+        </div>
+        <div class="about-text">
+          <p>Hi! I'm Rufaro Chipoyera — a third-year BSc Computer Science student at the University of the Western Cape in Cape Town. I started this site when I only knew HTML, as a way to document my journey into web development. What better way to learn than by doing?</p>
 
-      <div class="fade-in" style="margin-top: 2.5rem;">
-        <img src="pookie.jpg" alt="Rufaro" class="about-photo" />
-        <p>
-          Hi! This is the first design of my page using GitHub Pages. This is my first post 🎀😁
-        </p>
-        <img src="quby.gif" alt="dancing quby" class="about-gif" style="width:100px; margin-top:1.5rem;" />
+          <p>I'm originally from Zimbabwe and moved to Cape Town for university. I did not plan to study Computer Science — I wanted something Math-heavy and thought I'd transfer. Turns out CS is basically a glorified Math degree, so I stayed, fell in love with it, and forgot to apply for the transfer.</p>
+
+          <p>I'm a Dean's List student (twice over, Summa Cum Laude), placed 1st in my Data Structures module with 97%, and competed nationally in the Student Cluster Competition where my team came 3rd — which earned me a spot representing South Africa at the International Supercomputing Conference (ISC). I also co-founded UWC's High Performance Computing Club to bring that world to more students.</p>
+
+          <p>Beyond tech, I tutor — both university DSA students and high school Cambridge syllabus students. I lead the UWC Mathematics Club which provides free tutoring and food drives during exams. I care a lot about giving back, especially to students who are where I was a few years ago.</p>
+
+          <p>On the creative side: graphic design has been my hobby for a while and I'm slowly working towards making something of it. I also have a first-class personality, which is unfortunately not on my CV.</p>
+
+          <img src="quby.gif" alt="Quby dancing" class="quby" />
+        </div>
       </div>
     </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <span class="section-label">Skills</span>
+      <h2>What I work with</h2>
+      <div class="skills-grid fade-in">
+        <div class="skill-group">
+          <span class="skill-group-title">Languages</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">R</span>
+            <span class="skill-tag">SAS</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-title">Systems &amp; HPC</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">HPC Cluster Computing</span>
+            <span class="skill-tag">Networking</span>
+            <span class="skill-tag">NixOS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-title">CS Fundamentals</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+            <span class="skill-tag">Calculus</span>
+            <span class="skill-tag">Linear Algebra</span>
+            <span class="skill-tag">Statistics</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-title">Professional</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Mentoring</span>
+            <span class="skill-tag">Event Coordination</span>
+            <span class="skill-tag">Report Writing</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-title">Creative</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Graphic Design</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Illustrator</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-title">Tools</span>
+          <div class="skill-tags">
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Microsoft Office</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE TIMELINE -->
+    <section id="experience">
+      <span class="section-label">Experience</span>
+      <h2>Where I've been</h2>
+      <div class="timeline fade-in">
+
+        <div class="timeline-item">
+          <span class="timeline-date">Feb 2026 – Present</span>
+          <h3>Tutor — CSC211 Data Structures &amp; Algorithms</h3>
+          <span class="timeline-org">University of the Western Cape</span>
+          <ul>
+            <li>Achieved 1st place in the module with 97% before becoming the tutor</li>
+            <li>Facilitate tutorials and practicals, explain complex DSA concepts</li>
+            <li>Mark assessments and provide one-on-one consultations</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">Jan – Feb 2026</span>
+          <h3>Orientation Leader</h3>
+          <span class="timeline-org">University of the Western Cape</span>
+          <ul>
+            <li>Supervised and evaluated orientation guides</li>
+            <li>Chaired coordination meetings, liaised between management and guide teams</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">Feb – Nov 2025</span>
+          <h3>Student Assistant — Centre for Student Support Services</h3>
+          <span class="timeline-org">University of the Western Cape</span>
+          <ul>
+            <li>Administrative support, document preparation, report writing</li>
+            <li>Coordinated Career Expo and Heritage Day events</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">Mar – Nov 2025</span>
+          <h3>Recruitment Officer — TechForward Programme</h3>
+          <span class="timeline-org">Webmax Coding Academy</span>
+          <ul>
+            <li>Recruited volunteers for outreach to under-resourced community schools</li>
+            <li>Introduced learners to programming fundamentals through interactive tools</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">2024 – Present</span>
+          <h3>Private Tutor — Cambridge Syllabus</h3>
+          <span class="timeline-org">BrightSparks &amp; TutorsSA</span>
+          <ul>
+            <li>IGCSE and A-Level subjects, personalised sessions and exam preparation</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-date">Jan – Feb 2025</span>
+          <h3>Orientation Guide</h3>
+          <span class="timeline-org">University of the Western Cape</span>
+          <ul>
+            <li>Oriented first-year students, managed registers, compiled daily reports</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <span class="section-label">Achievements</span>
+      <h2>Highlights</h2>
+      <div class="timeline fade-in">
+        <div class="timeline-item">
+          <span class="timeline-date">2026</span>
+          <h3>International Supercomputing Conference (ISC) — Germany</h3>
+          <span class="timeline-org">One of 8 students selected to represent South Africa</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2025</span>
+          <h3>3rd Place — National Student Cluster Competition</h3>
+          <span class="timeline-org">Team: Ctrl + Alt + Defeat — UWC</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2025</span>
+          <h3>Accelerated Excellence Programme</h3>
+          <span class="timeline-org">Year-long leadership development for top performing UWC students</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2024 &amp; 2026</span>
+          <h3>Dean's List — Summa Cum Laude</h3>
+          <span class="timeline-org">88% GPA · University of the Western Cape</span>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2024</span>
+          <h3>Top 3 First-Year Undergraduate Students at UWC</h3>
+          <span class="timeline-org">Nominated for Top First-Year at Rector's Awards · 97% in DSA</span>
+        </div>
+      </div>
+    </section>
+
   </div>
 
   <footer>
-    <p>© <span id="year"></span> Rufaro Chipoyera · Built with HTML, CSS &amp; chaos 🎀</p>
+    <p>© <span id="year"></span> Rufaro Chipoyera · <a href="mailto:chipoyerarufaro28@gmail.com">chipoyerarufaro28@gmail.com</a></p>
   </footer>
 
   <script src="script.js"></script>

@@ -3,68 +3,166 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rufaro's Space</title>
+  <title>Rufaro Chipoyera</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav>
-    <span class="nav-logo">ruvachipoyera 🎀</span>
+    <span class="nav-logo">Rufaro Chipoyera</span>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About</a></li>
       <li><a href="posts.html">Posts</a></li>
-      <li><a href="extras.html">Extras</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
     </ul>
   </nav>
 
   <div class="container">
 
+    <!-- HERO -->
     <section class="hero">
-      <span class="hero-eyebrow">Welcome to my little corner of the internet ✨</span>
-      <h1>Rufaro's<br><em>Space!!</em></h1>
-      <p class="hero-sub">
-        Hi, I'm Rufaro! I share my thoughts, projects, and a bit of everything else here.
-        I'm currently pursuing a BSc Computer Science degree at
-        <a href="https://www.uwc.ac.za/" target="_blank">University of the Western Cape</a>, Cape Town.
-      </p>
-      <p class="hero-sub">
-        I started this site as a way to get into Web Development — what better way to learn than by doing.
-        It's just me and my HTML skills against the world, but by the time this is done I would have learned a lot 😁
-      </p>
-      <a href="posts.html" class="btn btn-primary">Read My Posts</a>
-      <a href="aboutme.html" class="btn btn-outline">About Me</a>
+      <div class="hero-bg-text" aria-hidden="true">Rufaro</div>
+      <div class="hero-content">
+        <span class="hero-eyebrow">BSc Computer Science · UWC · Cape Town</span>
+        <h1>Hi, I'm <em>Rufaro.</em><br>I build, learn &amp; lead.</h1>
+        <p class="hero-sub">Third-year Computer Science student, Dean's List, HPC competitor, tutor, club co-founder — and this is my little corner of the internet.</p>
+        <p class="hero-sub">I started this site with just HTML skills against the world. Look at us now 🎀</p>
+        <div class="hero-tags">
+          <span class="hero-tag">High Performance Computing</span>
+          <span class="hero-tag">Data Structures &amp; Algorithms</span>
+          <span class="hero-tag">Python · Java · SQL</span>
+          <span class="hero-tag">Linux &amp; Networking</span>
+          <span class="hero-tag">Graphic Design</span>
+          <span class="hero-tag">Community Outreach</span>
+        </div>
+        <a href="aboutme.html" class="btn btn-primary">About Me</a>
+        <a href="posts.html" class="btn btn-outline">Read My Posts</a>
+      </div>
     </section>
 
-    <section id="explore">
-      <span class="section-label">Explore</span>
-      <h2>What's here</h2>
-      <div class="projects-grid">
-        <a href="posts.html" class="card fade-in" style="text-decoration:none;">
-          <span class="card-tag">Blog</span>
-          <h3>Some stuff I wrote 🎀</h3>
-          <p>Me yapping about different aspects of my life — tech goals, first year, moving to Cape Town and more.</p>
-          <span class="card-link">Read posts</span>
+    <!-- STATS -->
+    <section id="stats" style="padding: 0; border:none;">
+      <div class="stats-row fade-in">
+        <div class="stat">
+          <span class="stat-num">88%</span>
+          <span class="stat-label">GPA</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">2×</span>
+          <span class="stat-label">Dean's List</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">97%</span>
+          <span class="stat-label">DSA — 1st Place</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3rd</span>
+          <span class="stat-label">National HPC</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">ISC</span>
+          <span class="stat-label">International Rep</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSTS PREVIEW -->
+    <section id="writing">
+      <span class="section-label">Writing</span>
+      <h2>From the blog</h2>
+      <div class="posts-grid">
+        <a href="2026plans.html" class="post-card fade-in">
+          <span class="post-card-tag">Reflection · 2026</span>
+          <h3>From First Year to Here: My 2026 Outlook</h3>
+          <p>I co-founded an HPC club, represented South Africa internationally, and somehow also figured out Linux. Here's what's next.</p>
+          <span class="post-card-date">March 2026</span>
+          <span class="post-arrow">↗</span>
         </a>
-        <a href="aboutme.html" class="card fade-in" style="text-decoration:none;">
-          <span class="card-tag">Me</span>
-          <h3>About Me</h3>
-          <p>Get to know the person behind the site. First post, first hello.</p>
-          <span class="card-link">Say hi</span>
+        <a href="2025stuff.html" class="post-card fade-in delay-1">
+          <span class="post-card-tag">Year in Review · 2025</span>
+          <h3>Everything I Did in 2025</h3>
+          <p>Student Cluster Competition, orientation leadership, tutoring, founding clubs, and somehow keeping an 88% GPA through all of it.</p>
+          <span class="post-card-date">December 2025</span>
+          <span class="post-arrow">↗</span>
         </a>
-        <a href="extras.html" class="card fade-in" style="text-decoration:none;">
-          <span class="card-tag">Fun</span>
-          <h3>Random Stuff</h3>
-          <p>A little corner for everything that doesn't fit neatly anywhere else.</p>
-          <span class="card-link">Explore</span>
+        <a href="firstyear.html" class="post-card fade-in delay-2">
+          <span class="post-card-tag">Throwback · 2024</span>
+          <h3>How My 2024 Went</h3>
+          <p>Python, Java, moving to Cape Town, discovering graphic design, and accidentally falling in love with Computer Science.</p>
+          <span class="post-card-date">November 2024</span>
+          <span class="post-arrow">↗</span>
         </a>
+      </div>
+    </section>
+
+    <!-- GALLERY PREVIEW -->
+    <section id="gallery-preview">
+      <span class="section-label">Gallery</span>
+      <h2>Some moments</h2>
+      <div class="gallery-grid fade-in">
+        <div class="gallery-item g-wide g-tall">
+          <img src="WhatsApp_Image_2026-03-26_at_14_15_34__1_.jpeg" alt="Rufaro at formal" />
+          <div class="gallery-caption">UWC Formal 🌸</div>
+        </div>
+        <div class="gallery-item g-med">
+          <img src="WhatsApp_Image_2026-03-26_at_14_17_10__1_.jpeg" alt="HPC Competition" />
+          <div class="gallery-caption">Student Cluster Competition</div>
+        </div>
+        <div class="gallery-item g-med">
+          <img src="WhatsApp_Image_2026-03-26_at_14_17_10.jpeg" alt="HPC setup" />
+          <div class="gallery-caption">The HPC setup 👆</div>
+        </div>
+        <div class="gallery-item g-third">
+          <img src="WhatsApp_Image_2026-03-26_at_14_15_34__2_.jpeg" alt="CSir presentation" />
+          <div class="gallery-caption">Presenting at CSir</div>
+        </div>
+        <div class="gallery-item g-third">
+          <img src="WhatsApp_Image_2026-03-26_at_14_21_47.jpeg" alt="UWC team booth" />
+          <div class="gallery-caption">Ctrl + Alt + Defeat — UWC 🖥</div>
+        </div>
+        <div class="gallery-item g-third">
+          <img src="WhatsApp_Image_2026-03-26_at_14_21_48.jpeg" alt="UWC team photo" />
+          <div class="gallery-caption">The team 🤝</div>
+        </div>
+      </div>
+      <div style="margin-top:1.5rem;">
+        <a href="gallery.html" class="btn btn-outline" style="margin-left:0;">View full gallery →</a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <span class="section-label">Let's connect</span>
+      <h2>Get in touch</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Whether it's opportunities, collaboration, the HPC club, or just to say hi — my inbox is open.</p>
+          <a href="Rufaro_Chipoyera_CV.pdf" class="cv-download" download>
+            ↓ Download my CV
+          </a>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:chipoyerarufaro28@gmail.com" class="contact-link">
+            <span>✉</span> chipoyerarufaro28@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/rufaro-chipoyera" class="contact-link" target="_blank">
+            <span>in</span> LinkedIn — Rufaro Chipoyera
+          </a>
+          <a href="https://github.com/ruvachipoyera" class="contact-link" target="_blank">
+            <span>⌥</span> GitHub
+          </a>
+        </div>
       </div>
     </section>
 
   </div>
 
   <footer>
-    <p>© <span id="year"></span> Rufaro Chipoyera · Built with HTML, CSS &amp; chaos 🎀</p>
+    <p>© <span id="year"></span> Rufaro Chipoyera · BSc Computer Science, UWC ·
+      <a href="mailto:chipoyerarufaro28@gmail.com">chipoyerarufaro28@gmail.com</a>
+    </p>
   </footer>
 
   <script src="script.js"></script>

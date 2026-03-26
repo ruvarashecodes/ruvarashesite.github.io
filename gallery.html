@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Rufaro Chipoyera</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-logo">Rufaro Chipoyera</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="posts.html">Posts</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section>
+      <a href="index.html" class="back-link">Home</a>
+      <span class="section-label">Gallery</span>
+      <h1>Some moments<br><em>along the way.</em></h1>
+      <p style="margin-top:0.8rem; color:var(--muted);">From formal nights to server rooms — a little bit of everything.</p>
+
+      <!-- MAIN GALLERY GRID -->
+      <div class="gallery-grid fade-in" style="margin-top:3rem;">
+
+        <!-- Row 1: big portrait + two stacked -->
+        <div class="gallery-item g-wide g-tall">
+          <img src="WhatsApp_Image_2026-03-26_at_14_15_34__1_.jpeg" alt="Rufaro at UWC Formal" />
+          <div class="gallery-caption">UWC Formal 🌸 — looking the part</div>
+        </div>
+        <div class="gallery-item g-med">
+          <img src="WhatsApp_Image_2026-03-26_at_14_15_34__2_.jpeg" alt="Presenting at CSir" />
+          <div class="gallery-caption">Presenting with the team at CSir</div>
+        </div>
+        <div class="gallery-item g-med">
+          <img src="WhatsApp_Image_2026-03-26_at_14_17_10__1_.jpeg" alt="HPC Station selfie" />
+          <div class="gallery-caption">HPC station selfie — two monitors minimum</div>
+        </div>
+
+        <!-- Row 2: three equal -->
+        <div class="gallery-item g-third">
+          <img src="WhatsApp_Image_2026-03-26_at_14_17_10.jpeg" alt="HPC Competition setup" />
+          <div class="gallery-caption">The competition setup 👆 NixOS superior</div>
+        </div>
+        <div class="gallery-item g-third">
+          <img src="WhatsApp_Image_2026-03-26_at_14_21_47.jpeg" alt="Ctrl + Alt + Defeat UWC booth" />
+          <div class="gallery-caption">Ctrl + Alt + Defeat — UWC 🖥 national round</div>
+        </div>
+        <div class="gallery-item g-third">
+          <img src="WhatsApp_Image_2026-03-26_at_14_21_48.jpeg" alt="Team photo at UWC" />
+          <div class="gallery-caption">The whole team 🤝 — wouldn't have it any other way</div>
+        </div>
+
+      </div>
+
+      <!-- CATEGORIES -->
+      <div style="margin-top:4rem;">
+        <span class="section-label">The journey</span>
+        <h2>HPC &amp; Competitions</h2>
+        <p style="margin-top:0.5rem;">The Student Cluster Competition was where a lot happened. We built clusters, ran benchmarks, debugged NixOS at midnight, and came 3rd nationally. The photos from that period are some of my favourites.</p>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Rufaro Chipoyera · <a href="mailto:chipoyerarufaro28@gmail.com">chipoyerarufaro28@gmail.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

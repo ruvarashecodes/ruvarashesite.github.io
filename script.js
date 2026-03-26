@@ -1,24 +1,16 @@
 // Fade in on scroll
 const observer = new IntersectionObserver(
-  (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
-  { threshold: 0.1 }
+  entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
+  { threshold: 0.08 }
 );
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// Active nav highlight
-const sections = document.querySelectorAll('section[id]');
+// Active nav link
 const navLinks = document.querySelectorAll('.nav-links a');
-const navObs = new IntersectionObserver(
-  (entries) => entries.forEach(e => {
-    if (e.isIntersecting) navLinks.forEach(l => {
-      l.style.color = '';
-      if (l.getAttribute('href') === '#' + e.target.id) l.style.color = 'var(--accent)';
-    });
-  }),
-  { rootMargin: '-40% 0px -40% 0px' }
-);
-sections.forEach(s => navObs.observe(s));
+navLinks.forEach(link => {
+  if (link.href === window.location.href) link.style.color = 'var(--accent)';
+});
 
-// Current year
+// Year
 const yr = document.getElementById('year');
 if (yr) yr.textContent = new Date().getFullYear();
