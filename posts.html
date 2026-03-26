@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html>
-<head><title>posts</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posts — Rufaro's Space</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <h2>This is basically me yapping about different aspects of my life 🎀</h2>
-    <a href="2025stuff.html">Things I want to do in 2025 </a>
-    <hr>
-    <a href="firstyear.html">Things I did in 2024 😊</a>
-    <hr>
-    <a href="aboutme.html"> Hey there </a>
-    <hr>
-    
 
+  <nav>
+    <span class="nav-logo">ruvachipoyera 🎀</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="posts.html">Posts</a></li>
+      <li><a href="extras.html">Extras</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section>
+      <a href="index.html" class="back-link">Home</a>
+      <span class="section-label">Writing</span>
+      <h1>Posts</h1>
+      <p style="margin-top:0.75rem;">This is basically me yapping about different aspects of my life 🎀</p>
+
+      <div class="posts-list fade-in">
+        <div class="post-item">
+          <a href="2025stuff.html">Things I want to do in 2025</a>
+          <span class="post-item-date">December 2024</span>
+        </div>
+        <div class="post-item">
+          <a href="firstyear.html">Things I did in 2024 😊</a>
+          <span class="post-item-date">15 November 2024</span>
+        </div>
+        <div class="post-item">
+          <a href="aboutme.html">Hey there — first post!</a>
+          <span class="post-item-date">2024</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Rufaro Chipoyera · Built with HTML, CSS &amp; chaos 🎀</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

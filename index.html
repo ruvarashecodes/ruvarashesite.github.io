@@ -1,17 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head> <title>ruvachipoyera</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rufaro's Space</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <h1>Rufaro's Space!!</h1>
-    <h3>Hi, I'm Rufaro! Welcome to my little corner of the internet where I share my thoughts, projects and a bit of everything else!</h3>
-    <p>I am currently pursuing a BSc Computer Science degree at <a href = "https://www.uwc.ac.za/">University of the Western Cape</a>, Cape Town. I started this site when as way to get into Web Development and what better way to learn than by doing. <br> 
-    Its just me and my basic html skills against the world but by the time this is done I would have learned a lot. I am excited and cannot wait to show off my skills (which I currently do not posses).  </p>
-    
-    
-    <a href="posts.html"><h2>Some stuff I wrote</h2></a>
 
-    <a href="extras.html"><h2>Random Stuff</h2></a>
-    
+  <nav>
+    <span class="nav-logo">ruvachipoyera 🎀</span>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+      <li><a href="posts.html">Posts</a></li>
+      <li><a href="extras.html">Extras</a></li>
+    </ul>
+  </nav>
 
+  <div class="container">
+
+    <section class="hero">
+      <span class="hero-eyebrow">Welcome to my little corner of the internet ✨</span>
+      <h1>Rufaro's<br><em>Space!!</em></h1>
+      <p class="hero-sub">
+        Hi, I'm Rufaro! I share my thoughts, projects, and a bit of everything else here.
+        I'm currently pursuing a BSc Computer Science degree at
+        <a href="https://www.uwc.ac.za/" target="_blank">University of the Western Cape</a>, Cape Town.
+      </p>
+      <p class="hero-sub">
+        I started this site as a way to get into Web Development — what better way to learn than by doing.
+        It's just me and my HTML skills against the world, but by the time this is done I would have learned a lot 😁
+      </p>
+      <a href="posts.html" class="btn btn-primary">Read My Posts</a>
+      <a href="aboutme.html" class="btn btn-outline">About Me</a>
+    </section>
+
+    <section id="explore">
+      <span class="section-label">Explore</span>
+      <h2>What's here</h2>
+      <div class="projects-grid">
+        <a href="posts.html" class="card fade-in" style="text-decoration:none;">
+          <span class="card-tag">Blog</span>
+          <h3>Some stuff I wrote 🎀</h3>
+          <p>Me yapping about different aspects of my life — tech goals, first year, moving to Cape Town and more.</p>
+          <span class="card-link">Read posts</span>
+        </a>
+        <a href="aboutme.html" class="card fade-in" style="text-decoration:none;">
+          <span class="card-tag">Me</span>
+          <h3>About Me</h3>
+          <p>Get to know the person behind the site. First post, first hello.</p>
+          <span class="card-link">Say hi</span>
+        </a>
+        <a href="extras.html" class="card fade-in" style="text-decoration:none;">
+          <span class="card-tag">Fun</span>
+          <h3>Random Stuff</h3>
+          <p>A little corner for everything that doesn't fit neatly anywhere else.</p>
+          <span class="card-link">Explore</span>
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© <span id="year"></span> Rufaro Chipoyera · Built with HTML, CSS &amp; chaos 🎀</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
